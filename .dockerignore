@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+README.md
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Node (如果有的話)
+node_modules
+npm-debug.log
+
+# 編輯器設定
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS 檔案
+.DS_Store
+Thumbs.db
+
+# 文件
+*.md
+docs/
+GOOGLE_FORM_SETUP.md
+
+# 原始檔案（不需要的）
+中悦森PLAZA.html
+中悦森PLAZA_files/
+
+# 暫存檔案
+*.tmp
+*.temp
+*.log
+
+# Claude 設定
+.claude/

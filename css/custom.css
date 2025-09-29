@@ -1,0 +1,201 @@
+/* 修正按鈕樣式問題 */
+.btn-more {
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    /* 修正垂直置中 */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1.2 !important;
+}
+
+/* 移除連結的預設樣式 */
+a.btn-more {
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 確保連結按鈕沒有下劃線 */
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* 修正按鈕的focus狀態 */
+.btn:focus,
+.btn-more:focus,
+.btn:active,
+.btn-more:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* 確保按鈕在不同狀態下都沒有邊框 */
+.btn-lg.btn-more {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 修正Bootstrap按鈕的預設樣式 */
+.btn {
+    border: none !important;
+}
+
+/* 特別針對有問題的按鈕 */
+#btn-right, #btn-right2 {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* ========== 圖片滿版設定 ========== */
+/* 重設body和html */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* KV圖片區域滿版設定 */
+.kv {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+}
+
+.kv > div {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.kv img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+/* 主容器調整 */
+.main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* 修正container可能造成的留白 */
+.container {
+    max-width: 100% !important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* 在較大螢幕恢復container的正常寬度（資訊區塊） */
+@media (min-width: 768px) {
+    .main_infor .container {
+        max-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .main_infor .container {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main_infor .container {
+        max-width: 1140px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main_infor .container {
+        max-width: 1320px !important;
+    }
+}
+
+/* 防止文字換行 */
+#infor_txt {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 調整icon和文字區塊的配置 */
+.col-md-4:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infor_icon {
+    margin-bottom: 10px !important;
+}
+
+/* 確保在小螢幕也不換行，可能需要縮小字體 */
+@media (max-width: 576px) {
+    #infor_txt {
+        font-size: 16px !important;
+        white-space: nowrap !important;
+        padding: 0 5px;
+    }
+
+    #infor_icon {
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #infor_txt {
+        font-size: 18px !important;
+        white-space: nowrap !important;
+    }
+
+    #infor_icon {
+        width: 85% !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #infor_txt {
+        font-size: 22px !important;
+        white-space: nowrap !important;
+    }
+
+    #infor_icon {
+        width: 90% !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    #infor_txt {
+        font-size: 24px !important;
+        white-space: nowrap !important;
+    }
+}
+
+@media (min-width: 1201px) {
+    #infor_txt {
+        font-size: 29px !important;
+        white-space: nowrap !important;
+    }
+}
