@@ -33,7 +33,7 @@ div.loadingdiv img {
 }
 
 .main_infor {
-  background-image: url(/images/infor_bg.png?98fb6f98a64880a330d3a791908f936d);
+  /* background-image: url(/images/infor_bg.png?98fb6f98a64880a330d3a791908f936d); */
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
