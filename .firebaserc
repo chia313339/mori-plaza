@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "dwtlung"
+  },
+  "targets": {
+    "dwtlung": {
+      "hosting": {
+        "moriplaza": [
+          "moriplaza"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
