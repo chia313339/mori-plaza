@@ -8,11 +8,6 @@
       "**/.*",
       "**/node_modules/**",
       "*.md",
-      "Dockerfile",
-      ".dockerignore",
-      "cloudbuild.yaml",
-      "nginx.conf",
-      "deploy.sh",
       "中悦森PLAZA.html",
       "中悦森PLAZA_files/**"
     ]

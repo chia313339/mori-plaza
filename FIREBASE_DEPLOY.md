@@ -20,7 +20,7 @@
 ## 設定檔
 
 - `firebase.json` — `hosting.target` 設為 `moriplaza`，`public` 為專案根目錄 `.`，
-  並 ignore 掉非網站檔案（md、Dockerfile、nginx.conf 等）。
+  並 ignore 掉非網站檔案（md、隱藏檔等）。
 - `.firebaserc` — `default` 專案為 `dwtlung`；`targets.dwtlung.hosting.moriplaza`
   對應到 site `moriplaza`。
 
