@@ -6,6 +6,7 @@
       "firebase.json",
       ".firebaserc",
       "**/.*",
+      "**/.*/**",
       "**/node_modules/**",
       "*.md",
       "中悦森PLAZA.html",
