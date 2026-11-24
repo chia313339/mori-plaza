@@ -15,7 +15,8 @@ $(document).ready(function() {
 function submitForm() {
     // 取得表單值
     var name = $('#name').val().trim();
-    var phone = $('#phone').val().trim();
+    // 去除使用者可能輸入的空白與減號，例如 0912-345-678
+    var phone = $('#phone').val().replace(/[\s\-]/g, '');
     var email = $('#email').val().trim();
 
     // 驗證姓名
@@ -44,12 +45,12 @@ function submitForm() {
         return false;
     }
 
-    // 驗證電話格式（只允許數字、減號、括號、加號）
-    var phoneReg = /^[\d\-\(\)\+\s]+$/;
+    // 驗證手機格式：09 開頭的 10 碼數字
+    var phoneReg = /^09\d{8}$/;
     if (!phoneReg.test(phone)) {
         Swal.fire({
-            title: '電話格式錯誤',
-            text: '請輸入正確的電話號碼',
+            title: '手機號碼格式錯誤',
+            text: '請輸入 09 開頭的 10 碼手機號碼，例如 0912345678',
             icon: 'warning',
             confirmButtonText: '繼續填寫',
             confirmButtonColor: "#3E3A39",
